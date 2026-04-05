@@ -1,1 +1,96 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: radial-gradient(circle at top, #6ED3E0, #6FEDA3);
+  color: white;
+  text-align: center;
+}
 
+/* HEADER */
+header {
+  margin-top: 40px;
+}
+
+header h1 {
+  color: #FF7DDB;
+}
+
+header p {
+  color: #FF7DDB;
+}
+
+/* CARD CONTAINER */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+/* CARDS */
+.card {
+  background-color: #C8FFB0;
+  padding: 20px;
+  border-radius: 15px;
+  width: 180px;
+
+  border: 2px pink;
+  box-shadow: 0 0 10px pink;
+
+  transition: all 0.3s ease;
+}
+
+.card p {
+  color: green;
+}
+
+/* HOVER EFFECT */
+.card:hover {
+  transform: scale(1.05) rotate(-1deg);
+  box-shadow: 0 0 20px pink;
+}
+
+/* IMAGE */
+.card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* BUTTON */
+.main-btn {
+  margin-top: 30px;
+  padding: 12px 25px;
+  background-color: pink;
+  border: blue;
+  border-radius: 10px;
+  cursor: pointer;
+
+  transition: all 0.5s ease-in-out;
+}
+
+/* BUTTON HOVER */
+.main-btn:hover {
+  background-color: #4DFF68;
+  transform: scale(1.1);
+}
+
+/* KEYFRAME ANIMATION (floating effect) */
+.card:nth-child(2) {
+  animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* FOOTER */
+footer {
+  background-color: #4DFF68;
+  margin-top: 60px;
+  font-size: 14px;
+  opacity: 0.7;
+}
